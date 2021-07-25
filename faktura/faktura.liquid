@@ -19,10 +19,11 @@
         <div style="float: left; margin: 0 0 1.5em 0;">
             <h3>DODÁVATEĽ:</h3>
             <p>
-                <strong>IČO:</strong> 47243171<br/>
-                <strong>DIČ:</strong> 2023633271<br/>
-                Nie som platiteľ DPH<br/>
-                <strong>KOVLAD s.r.o.</strong><br/>
+                <strong>IČO:</strong> [...]<br/>
+                <strong>DIČ:</strong> [...]<br/>
+                <strong>IČ DPH:</strong> [...]<br/>
+                {% comment %} Nie som platiteľ DPH<br/> {% endcomment %}
+                <strong>[NAZOV SPOLOCNOSTI]</strong><br/>
             </p>
             {{ shop.address }}<br/>
             {{ shop.city }} {{ shop.province_code }} {{ shop.zip | upcase }}<br/>
@@ -31,13 +32,13 @@
 
         <div style="float: right;">
             <p>
-                <strong>Banka:</strong> Fio banka<br/>
-                <strong>IBAN:</strong> SK04 8330 0000 0025 0166 0188<br/>
-                <strong>SWIFT:</strong> FIOZSKBAXXX<br/>
+                <strong>Banka:</strong> [NAZOV BANKY]<br/>
+                <strong>IBAN:</strong> [IBAN]<br/>
+                <strong>SWIFT:</strong> [BIC]]<br/>
                 <strong>Variabilný symbol:</strong> {{ order_number }}<br/>
-                <strong>Číslo:</strong> +421 903 500 649<br/>
-                <strong>Web:</strong> www.cbd4life.sk<br/>
-                <strong>E-mail:</strong> cbd4lifesk@gmail.com
+                <strong>Číslo:</strong> [TELEFONNE CISLO]<br/>
+                <strong>Web:</strong> [STRANKA]<br/>
+                <strong>E-mail:</strong> [MAIL]
             </p>
 
         </div>
@@ -142,7 +143,6 @@
             </tr>
         {% endfor %}
         </tbody>
-        <p style="margin:0;color: #565656;">Všetky produkty sú považované za zberateľské predmety, ktoré nie sú určené na vnútorné aplikovanie.</p>
     </table>
     <!-- PRODUKT INFO VIAC PLATBÁCH -->
     {% if transactions.size > 1 %}
@@ -218,6 +218,6 @@
 
     
     <p>V prípade otázok nás kontaktujete na <u>{{ shop.email }}</u></p>
-    <p style="color: #565656">Spoločnosť je zapísaná v Obchodnom registri Okresného súdu Banská Bystrica, oddiel Sro, vložka č. 23228/S</p>
+    <p style="color: #565656">[OBCHODNY REGISTER]</p>
   
 </body>
